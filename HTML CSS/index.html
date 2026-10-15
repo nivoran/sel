@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voyage & Découverte - Madagascar</title>
+    <meta name="description" content="Découvrez les plus beaux paysages de Madagascar.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- En-tête du site -->
+    <header class="entete">
+        <div class="identite">
+            <img src="images/logo.png" alt="Logo Voyage et Découverte">
+            <div>
+                <h2>Voyage & Découverte</h2>
+                <p>Explorez le monde, vivez des expériences uniques</p>
+            </div>
+        </div>
+
+        <!-- Menu de navigation -->
+        <nav aria-label="Navigation principale">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#conseils">Conseils</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Bannière d'accueil -->
+        <section id="accueil" class="banniere">
+            <div class="texte-banniere">
+                <h1>Madagascar, une île aux mille trésors</h1>
+
+                <p>
+                    Des paysages à couper le souffle, une culture
+                    riche et des rencontres inoubliables vous attendent.
+                </p>
+
+                <a href="#destinations" class="bouton">
+                    Découvrir Madagascar
+                </a>
+            </div>
+        </section>
+
+        <!-- Destinations et informations complémentaires -->
+        <div class="contenu">
+
+            <section id="destinations" class="destinations">
+                <h2>Nos dernières destinations</h2>
+
+                <div class="cartes">
+
+                    <article class="carte">
+                        <figure>
+                            <img src="images/baobabs.jpg"
+                                 alt="Allée des baobabs à Madagascar">
+                            <figcaption>Allée des Baobabs</figcaption>
+                        </figure>
+
+                        <h3>Allée des Baobabs</h3>
+                        <p>
+                            Un site emblématique de Madagascar,
+                            à ne pas manquer lors de votre voyage.
+                        </p>
+                        <a href="#conseils">Lire la suite →</a>
+                    </article>
+
+                    <article class="carte">
+                        <figure>
+                            <img src="images/nosy-be.jpg"
+                                 alt="Plage de Nosy Be">
+                            <figcaption>Nosy Be</figcaption>
+                        </figure>
+
+                        <h3>Nosy Be</h3>
+                        <p>
+                            Une île paradisiaque, idéale pour se
+                            détendre et profiter de la mer.
+                        </p>
+                        <a href="#conseils">Lire la suite →</a>
+                    </article>
+
+                    <article class="carte">
+                        <figure>
+                            <img src="images/tsingy.jpg"
+                                 alt="Paysage des Tsingy de Bemaraha">
+                            <figcaption>Tsingy de Bemaraha</figcaption>
+                        </figure>
+
+                        <h3>Tsingy de Bemaraha</h3>
+                        <p>
+                            Un paysage unique au monde, classé
+                            au patrimoine mondial de l'UNESCO.
+                        </p>
+                        <a href="#conseils">Lire la suite →</a>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Colonne latérale -->
+            <aside class="barre-laterale">
+
+                <section id="conseils" class="encadre">
+                    <h3>Bon à savoir</h3>
+                    <p>
+                        La meilleure période pour visiter Madagascar
+                        s'étend généralement d'avril à novembre,
+                        selon les régions.
+                    </p>
+                </section>
+
+                <section class="encadre newsletter">
+                    <h3>Abonnez-vous à notre newsletter</h3>
+                    <p>
+                        Recevez nos conseils et nos offres spéciales
+                        directement dans votre boîte mail.
+                    </p>
+
+                    <form action="#" method="post">
+                        <label for="email">Votre adresse e-mail</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="exemple@email.com" required>
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </section>
+
+                <section class="encadre">
+                    <h3>Nos partenaires</h3>
+                    <ul>
+                        <li>Office du tourisme</li>
+                        <li>Madagascar Airlines</li>
+                        <li>Hôtels partenaires</li>
+                    </ul>
+                </section>
+
+            </aside>
+        </div>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="pied-page">
+        <div class="colonnes-pied">
+
+            <section id="apropos">
+                <h2>Voyage & Découverte</h2>
+                <p>
+                    Explorez le monde, vivez des expériences uniques.
+                </p>
+            </section>
+
+            <nav aria-label="Liens de pied de page">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#conseils">Conseils</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                </ul>
+            </nav>
+
+            <address id="contact">
+                <h3>Contact</h3>
+                Antananarivo, Madagascar<br>
+                Téléphone : +261 34 12 345 67<br>
+                E-mail : contact@voyage-decouverte.mg
+            </address>
+
+            <section>
+                <h3>Partenaires</h3>
+                <p>Ensemble pour un tourisme durable et responsable.</p>
+            </section>
+
+        </div>
+
+        <p class="copyright">
+            <small>
+                © 2026 Voyage & Découverte. Tous droits réservés.
+            </small>
+        </p>
+    </footer>
+
+</body>
+</html>

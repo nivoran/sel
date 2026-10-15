@@ -1,0 +1,270 @@
+
+/* Réglages généraux */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #18324d;
+    line-height: 1.6;
+}
+
+a {
+    color: #0875cf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* En-tête */
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 5%;
+    background-color: white;
+}
+
+.identite {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.identite img {
+    width: 65px;
+}
+
+.identite h2,
+.identite p {
+    margin: 0;
+}
+
+.identite h2 {
+    color: #07549a;
+}
+
+.identite p {
+    font-size: 12px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    color: #18324d;
+    font-weight: bold;
+}
+
+/* Bannière principale */
+.banniere {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 35px 5%;
+    color: white;
+    background:
+        linear-gradient(90deg,
+            rgba(0, 45, 85, 0.85),
+            rgba(0, 45, 85, 0.1)),
+        url("images/madagascar.jpg") center / cover;
+}
+
+.texte-banniere {
+    max-width: 600px;
+}
+
+.texte-banniere h1 {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.bouton {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 20px;
+    color: white;
+    background-color: #ff9800;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Contenu principal */
+.contenu {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 25px;
+    padding: 25px 4%;
+}
+
+.destinations > h2 {
+    color: #07549a;
+}
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.carte {
+    min-width: 0;
+}
+
+.carte figure {
+    margin: 0;
+}
+
+.carte img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carte figcaption {
+    font-size: 12px;
+    color: #666;
+}
+
+.carte h3 {
+    margin-bottom: 5px;
+    color: #07549a;
+}
+
+.carte p {
+    margin-top: 0;
+}
+
+/* Colonne latérale */
+.barre-laterale {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.encadre {
+    padding: 15px;
+    background-color: #eaf4ff;
+    border-radius: 8px;
+}
+
+.encadre h3 {
+    margin-top: 0;
+    color: #07549a;
+}
+
+.newsletter {
+    background-color: #e5f6eb;
+}
+
+.newsletter label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    color: white;
+    background-color: #087c4a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Pied de page */
+.pied-page {
+    padding: 25px 4% 10px;
+    color: white;
+    background-color: #07345b;
+}
+
+.colonnes-pied {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.pied-page h2,
+.pied-page h3 {
+    margin-top: 0;
+}
+
+.pied-page a {
+    color: white;
+}
+
+.pied-page nav ul {
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pied-page address {
+    font-style: normal;
+}
+
+.copyright {
+    margin-top: 25px;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 1px solid #41617d;
+}
+
+/* Adaptation aux petits écrans */
+@media (max-width: 900px) {
+    .entete {
+        flex-direction: column;
+    }
+
+    .contenu {
+        grid-template-columns: 1fr;
+    }
+
+    .cartes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .colonnes-pied {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .cartes,
+    .colonnes-pied {
+        grid-template-columns: 1fr;
+    }
+
+    .texte-banniere h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
